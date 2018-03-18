@@ -167,6 +167,62 @@
 </nav>
       <div class="body-wrap">
   
+    <article id="post-新建文本文档 (2)" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2018/03/18/新建文本文档 (2)/" class="article-date">
+  	<time datetime="2018-03-18T10:39:41.248Z" itemprop="datePublished">2018-03-18</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/03/18/新建文本文档 (2)/">
+        文件包含漏洞原理
+        
+      </a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>1、什么是文件包含漏洞<br>文件包含，包括本地文件包含（Locao file inclusion,LFI)和远程文件包含（Remote File Inclusion,RFI)两种形式。<br>首先，本地文件包含就是通过浏览器引进（包含）Web服务器上的文件，这种漏洞一般发生在浏览器包含文件时没有进行严格的过滤，<br>允许遍历目录的字符注入浏览器并执行（比如：asp?file=index.html)。<br>其次，远程文件简称RFI，该漏洞允许攻击者包含一个远程的文件，一般是远程服务器上的预先设置好的脚本，<br>这种漏洞是由于浏览器对于用户输入没有进行检测，<br>导致不同程度的信息泄露、拒绝服务攻击甚至在目标服务器上执行代码（比如：asp?file=<a href="http://www.hacker.com/webshell/shell.asp)。" target="_blank" rel="noopener">http://www.hacker.com/webshell/shell.asp)。</a><br>2、文件包含漏洞的危害<br>这类漏洞看起来貌似并不严重，一旦被恶意利用则会带来很大的危害。<br>本地文件包含不仅能够包含web文件目录中的一些配置文件（比如Web应用、数据库配置文件、config文件），<br>还可以查看到一些Web动态页面的源代码，为攻击者进一步发掘web应用漏洞提供条件，<br>甚至一旦与路径遍历漏洞相结合，还可能直接攫取目标系统的用户名与密码等文件。</p>
+<pre><code>信安之路还长，任重而道远。   -行走
+</code></pre>
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+      
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
     <article id="post-新建文本文档" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">

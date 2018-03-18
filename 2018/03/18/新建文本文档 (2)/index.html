@@ -3,23 +3,23 @@
 <head>
   <meta charset="utf-8">
   
-  <title>计算机网络（简书） | 行走</title>
+  <title>文件包含漏洞原理 | 行走</title>
 
   <!-- keywords -->
   
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="总时延=发送时延+传播时延+处理时延+排队时延 网络协议（协议）：网络中进行数据交换而建立的规则、标准或约定。 网络协议包括：一：语法：数据与控制信息的结构或格式。          二：语义：需要发出何种控制信息，完成何种动作以及做出何种响应。          三：同步：事件实现顺序的详细说明。 五层协议结构体系：应用层，运输层，网际层，网络结构层（数据链路层，物理层） 协议（水平）控制对等">
+  <meta name="description" content="1、什么是文件包含漏洞文件包含，包括本地文件包含（Locao file inclusion,LFI)和远程文件包含（Remote File Inclusion,RFI)两种形式。首先，本地文件包含就是通过浏览器引进（包含）Web服务器上的文件，这种漏洞一般发生在浏览器包含文件时没有进行严格的过滤，允许遍历目录的字符注入浏览器并执行（比如：asp?file=index.html)。其次，远程文件简称">
 <meta property="og:type" content="article">
-<meta property="og:title" content="计算机网络（简书）">
-<meta property="og:url" content="http://yoursite.com/2018/03/18/新建文本文档/index.html">
+<meta property="og:title" content="文件包含漏洞原理">
+<meta property="og:url" content="http://yoursite.com/2018/03/18/新建文本文档 (2)/index.html">
 <meta property="og:site_name" content="行走">
-<meta property="og:description" content="总时延=发送时延+传播时延+处理时延+排队时延 网络协议（协议）：网络中进行数据交换而建立的规则、标准或约定。 网络协议包括：一：语法：数据与控制信息的结构或格式。          二：语义：需要发出何种控制信息，完成何种动作以及做出何种响应。          三：同步：事件实现顺序的详细说明。 五层协议结构体系：应用层，运输层，网际层，网络结构层（数据链路层，物理层） 协议（水平）控制对等">
+<meta property="og:description" content="1、什么是文件包含漏洞文件包含，包括本地文件包含（Locao file inclusion,LFI)和远程文件包含（Remote File Inclusion,RFI)两种形式。首先，本地文件包含就是通过浏览器引进（包含）Web服务器上的文件，这种漏洞一般发生在浏览器包含文件时没有进行严格的过滤，允许遍历目录的字符注入浏览器并执行（比如：asp?file=index.html)。其次，远程文件简称">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-18T03:11:35.586Z">
+<meta property="og:updated_time" content="2018-03-18T10:43:08.197Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="计算机网络（简书）">
-<meta name="twitter:description" content="总时延=发送时延+传播时延+处理时延+排队时延 网络协议（协议）：网络中进行数据交换而建立的规则、标准或约定。 网络协议包括：一：语法：数据与控制信息的结构或格式。          二：语义：需要发出何种控制信息，完成何种动作以及做出何种响应。          三：同步：事件实现顺序的详细说明。 五层协议结构体系：应用层，运输层，网际层，网络结构层（数据链路层，物理层） 协议（水平）控制对等">
+<meta name="twitter:title" content="文件包含漏洞原理">
+<meta name="twitter:description" content="1、什么是文件包含漏洞文件包含，包括本地文件包含（Locao file inclusion,LFI)和远程文件包含（Remote File Inclusion,RFI)两种形式。首先，本地文件包含就是通过浏览器引进（包含）Web服务器上的文件，这种漏洞一般发生在浏览器包含文件时没有进行严格的过滤，允许遍历目录的字符注入浏览器并执行（比如：asp?file=index.html)。其次，远程文件简称">
   
     <link rel="alternative" href="/atom.xml" title="行走" type="application/atom+xml">
   
@@ -169,11 +169,11 @@
 		</header>				
 	</div>
 </nav>
-      <div class="body-wrap"><article id="post-新建文本文档" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-新建文本文档 (2)" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2018/03/18/新建文本文档/" class="article-date">
-  	<time datetime="2018-03-18T03:02:27.699Z" itemprop="datePublished">2018-03-18</time>
+      <a href="/2018/03/18/新建文本文档 (2)/" class="article-date">
+  	<time datetime="2018-03-18T10:39:41.248Z" itemprop="datePublished">2018-03-18</time>
 </a>
     </div>
   
@@ -186,7 +186,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      计算机网络（简书）
+      文件包含漏洞原理
       
     </h1>
   
@@ -204,25 +204,9 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <blockquote>
-<pre><code>总时延=发送时延+传播时延+处理时延+排队时延
-网络协议（协议）：网络中进行数据交换而建立的规则、标准或约定。
-网络协议包括：一：语法：数据与控制信息的结构或格式。
-         二：语义：需要发出何种控制信息，完成何种动作以及做出何种响应。
-         三：同步：事件实现顺序的详细说明。
-五层协议结构体系：应用层，运输层，网际层，网络结构层（数据链路层，物理层）
-协议（水平）控制对等实体间通信的规则，服务（垂直）由下层向上层通过层接口提供
-三次握手（建立Tcp连接）：
-（1）第一次握手：Client将标志位SYN置为1，随机产生一个值seq=J，并将该数据包发送给Server，Client进入SYN_SENT状态，等待Server确认。
-（2）第二次握手：Server收到数据包后由标志位SYN=1知道Client请求建立连接，Server将标志位SYN和ACK都置为1，ack=J+1，随机产生一个值seq=K，并将该数据包发送给Client以确认连接请求，Server进入SYN_RCVD状态。
-（3）第三次握手：Client收到确认后，检查ack是否为J+1，ACK是否为1，如果正确则将标志位ACK置为1，ack=K+1，并将该数据包发送给Server，Server检查ack是否为K+1，ACK是否为1，如果正确则连接建立成功，Client和Server进入ESTABLISHED状态，完成三次握手，随后Client与Server之间可以开始传输数据了。
- 四次握手（断开Tcp连接）：
-（1）第一次挥手：Client发送一个FIN，用来关闭Client到Server的数据传送，Client进入FIN_WAIT_1状态。
-（2）第二次挥手：Server收到FIN后，发送一个ACK给Client，确认序号为收到序号+1（与SYN相同，一个FIN占用一个序号），Server进入CLOSE_WAIT状态。
-（3）第三次挥手：Server发送一个FIN，用来关闭Server到Client的数据传送，Server进入LAST_ACK状态。
-（4）第四次挥手：Client收到FIN后，Client进入TIME_WAIT状态，接着发送一个ACK给Server，确认序号为收到序号+1，Server进入CLOSED状态，完成四次挥手。 
-</code></pre></blockquote>
-
+        <p>1、什么是文件包含漏洞<br>文件包含，包括本地文件包含（Locao file inclusion,LFI)和远程文件包含（Remote File Inclusion,RFI)两种形式。<br>首先，本地文件包含就是通过浏览器引进（包含）Web服务器上的文件，这种漏洞一般发生在浏览器包含文件时没有进行严格的过滤，<br>允许遍历目录的字符注入浏览器并执行（比如：asp?file=index.html)。<br>其次，远程文件简称RFI，该漏洞允许攻击者包含一个远程的文件，一般是远程服务器上的预先设置好的脚本，<br>这种漏洞是由于浏览器对于用户输入没有进行检测，<br>导致不同程度的信息泄露、拒绝服务攻击甚至在目标服务器上执行代码（比如：asp?file=<a href="http://www.hacker.com/webshell/shell.asp)。" target="_blank" rel="noopener">http://www.hacker.com/webshell/shell.asp)。</a><br>2、文件包含漏洞的危害<br>这类漏洞看起来貌似并不严重，一旦被恶意利用则会带来很大的危害。<br>本地文件包含不仅能够包含web文件目录中的一些配置文件（比如Web应用、数据库配置文件、config文件），<br>还可以查看到一些Web动态页面的源代码，为攻击者进一步发掘web应用漏洞提供条件，<br>甚至一旦与路径遍历漏洞相结合，还可能直接攫取目标系统的用户名与密码等文件。</p>
+<pre><code>信安之路还长，任重而道远。   -行走
+</code></pre>
       
     </div>
     
@@ -231,18 +215,9 @@
     
 <nav id="article-nav">
   
-    <a href="/2018/03/18/新建文本文档 (2)/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">&lt;</strong>
-      <div class="article-nav-title">
-        
-          文件包含漏洞原理
-        
-      </div>
-    </a>
   
-  
-    <a href="/2018/03/18/first/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Hey Friends</div>
+    <a href="/2018/03/18/新建文本文档/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">计算机网络（简书）</div>
       <strong class="article-nav-caption">&gt;</strong>
     </a>
   
@@ -252,7 +227,7 @@
 </article>
 
 
-<div class="ds-share share" data-thread-key="新建文本文档" data-title="计算机网络（简书）" data-url="http://yoursite.com/2018/03/18/新建文本文档/"  data-images="http://7xkj1z.com1.z0.glb.clouddn.com/head.jpg" data-content="计算机网络（简书）">
+<div class="ds-share share" data-thread-key="新建文本文档 (2)" data-title="文件包含漏洞原理" data-url="http://yoursite.com/2018/03/18/新建文本文档 (2)/"  data-images="http://7xkj1z.com1.z0.glb.clouddn.com/head.jpg" data-content="文件包含漏洞原理">
     <div class="ds-share-inline">
       <ul  class="ds-share-icons-16">
       	<li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
