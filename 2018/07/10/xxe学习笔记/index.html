@@ -3,19 +3,44 @@
 <head>
   <meta charset="utf-8">
   
-  <title>行走</title>
+  <title>xxe学习笔记 | 行走</title>
 
   <!-- keywords -->
   
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="行走">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="xml基础知识 要了解xxe漏洞，那么一定得先明白基础知识，了解xml文档的基础组成。 XML用于标记电子文件使其具有结构性的标记语言，可以用来标记数据、定义数据类型，是一种允许用户对自己的标记语言进行定义的源语言。XML文档结构包括XML声明、DTD文档类型定义（可选）、文档元素 xml文档的构建模块 所有的 XML 文档（以及 HTML 文档）均由以下简单的构建模块构成： 元素 属性 实体 P">
+<meta property="og:type" content="article">
+<meta property="og:title" content="xxe学习笔记">
+<meta property="og:url" content="http://yoursite.com/2018/07/10/xxe学习笔记/index.html">
 <meta property="og:site_name" content="行走">
+<meta property="og:description" content="xml基础知识 要了解xxe漏洞，那么一定得先明白基础知识，了解xml文档的基础组成。 XML用于标记电子文件使其具有结构性的标记语言，可以用来标记数据、定义数据类型，是一种允许用户对自己的标记语言进行定义的源语言。XML文档结构包括XML声明、DTD文档类型定义（可选）、文档元素 xml文档的构建模块 所有的 XML 文档（以及 HTML 文档）均由以下简单的构建模块构成： 元素 属性 实体 P">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://images2017.cnblogs.com/blog/1205477/201707/1205477-20170729131727597-973576085.png">
+<meta property="og:image" content="http://yoursite.com/2018/07/10/xxe学习笔记/computer.gif">
+<meta property="og:image" content="https://images2017.cnblogs.com/blog/1205477/201707/1205477-20170729140431597-914383211.png">
+<meta property="og:image" content="https://images2017.cnblogs.com/blog/1205477/201707/1205477-20170729140617472-1523498833.png">
+<meta property="og:image" content="https://images2017.cnblogs.com/blog/1205477/201707/1205477-20170729140640300-285141670.png">
+<meta property="og:image" content="https://images2017.cnblogs.com/blog/1205477/201707/1205477-20170729141950472-1045381626.png">
+<meta property="og:image" content="https://images2017.cnblogs.com/blog/1205477/201707/1205477-20170729142002394-1678808572.png">
+<meta property="og:image" content="https://images2017.cnblogs.com/blog/1205477/201707/1205477-20170729141612957-759004042.png">
+<meta property="og:image" content="https://images2017.cnblogs.com/blog/1205477/201707/1205477-20170729141643972-251925223.png">
+<meta property="og:image" content="https://images2017.cnblogs.com/blog/1205477/201707/1205477-20170729145026738-1407663000.png">
+<meta property="og:image" content="https://images2017.cnblogs.com/blog/1205477/201707/1205477-20170729145035082-1171815922.png">
+<meta property="og:image" content="https://images2017.cnblogs.com/blog/1205477/201707/1205477-20170729145050972-1215502458.png">
+<meta property="og:image" content="https://images2017.cnblogs.com/blog/1205477/201707/1205477-20170729145104285-1507820174.png">
+<meta property="og:image" content="https://images2017.cnblogs.com/blog/1205477/201707/1205477-20170729145111863-976147511.png">
+<meta property="og:image" content="https://images2017.cnblogs.com/blog/1205477/201707/1205477-20170729145120957-1229784360.png">
+<meta property="og:image" content="https://images2017.cnblogs.com/blog/1205477/201707/1205477-20170729145129957-1907303428.png">
+<meta property="og:image" content="https://images2017.cnblogs.com/blog/1205477/201707/1205477-20170729145153722-1549362415.png">
+<meta property="og:image" content="https://images2017.cnblogs.com/blog/1205477/201707/1205477-20170729145204847-766408731.png">
+<meta property="og:image" content="https://images2017.cnblogs.com/blog/1205477/201707/1205477-20170729145220472-216779729.png">
+<meta property="og:image" content="https://images2017.cnblogs.com/blog/1205477/201707/1205477-20170729145231894-1025001344.png">
+<meta property="og:updated_time" content="2018-07-11T03:27:39.738Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="行走">
+<meta name="twitter:title" content="xxe学习笔记">
+<meta name="twitter:description" content="xml基础知识 要了解xxe漏洞，那么一定得先明白基础知识，了解xml文档的基础组成。 XML用于标记电子文件使其具有结构性的标记语言，可以用来标记数据、定义数据类型，是一种允许用户对自己的标记语言进行定义的源语言。XML文档结构包括XML声明、DTD文档类型定义（可选）、文档元素 xml文档的构建模块 所有的 XML 文档（以及 HTML 文档）均由以下简单的构建模块构成： 元素 属性 实体 P">
+<meta name="twitter:image" content="https://images2017.cnblogs.com/blog/1205477/201707/1205477-20170729131727597-973576085.png">
   
     <link rel="alternative" href="/atom.xml" title="行走" type="application/atom+xml">
   
@@ -165,9 +190,7 @@
 		</header>				
 	</div>
 </nav>
-      <div class="body-wrap">
-  
-    <article id="post-xxe学习笔记" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-xxe学习笔记" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
       <a href="/2018/07/10/xxe学习笔记/" class="article-date">
@@ -183,15 +206,21 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/07/10/xxe学习笔记/">
-        xxe学习笔记
-        
-      </a>
+    <h1 class="article-title" itemprop="name">
+      xxe学习笔记
+      
     </h1>
   
 
       </header>
+      
+      <div class="article-info article-info-post">
+        
+        
+
+        
+        <div class="clearfix"></div>
+      </div>
       
     
     <div class="article-entry" itemprop="articleBody">
@@ -253,336 +282,42 @@ CDATA
       
     </div>
     
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-      
-    
   </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2018/03/26/test-1/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">test</div>
+      <strong class="article-nav-caption">&gt;</strong>
+    </a>
+  
+</nav>
+
   
 </article>
 
 
-
-
-
-
-
-  
-    <article id="post-test-1" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2018/03/26/test-1/" class="article-date">
-  	<time datetime="2018-03-26T11:20:41.000Z" itemprop="datePublished">2018-03-26</time>
-</a>
+<div class="ds-share share" data-thread-key="xxe学习笔记" data-title="xxe学习笔记" data-url="http://yoursite.com/2018/07/10/xxe学习笔记/"  data-images="http://7xkj1z.com1.z0.glb.clouddn.com/head.jpg" data-content="xxe学习笔记">
+    <div class="ds-share-inline">
+      <ul  class="ds-share-icons-16">
+      	<li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
+        <li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a></li>
+        <li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a></li>
+        <li><a class="ds-qqt" href="javascript:void(0);" data-service="qqt">腾讯微博</a></li>
+        <li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a></li>
+      </ul>
+      <div class="ds-share-icons-more">
+      </div>
     </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/03/26/test-1/">
-        test
-        
-      </a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>你好呀<br><img src="/2018/03/26/test-1/test-1.jpg" alt="你好！"></p>
-<p>你好</p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-      
-    
-  </div>
-  
-</article>
+ </div>
+ 
 
 
 
 
 
-
-
-  
-    <article id="post-新建文本文档 (2)" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2018/03/18/新建文本文档 (2)/" class="article-date">
-  	<time datetime="2018-03-18T10:39:41.248Z" itemprop="datePublished">2018-03-18</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/03/18/新建文本文档 (2)/">
-        文件包含漏洞原理
-        
-      </a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>1、什么是文件包含漏洞<br>文件包含，包括本地文件包含（Locao file inclusion,LFI)和远程文件包含（Remote File Inclusion,RFI)两种形式。<br>首先，本地文件包含就是通过浏览器引进（包含）Web服务器上的文件，这种漏洞一般发生在浏览器包含文件时没有进行严格的过滤，<br>允许遍历目录的字符注入浏览器并执行（比如：asp?file=index.html)。<br>其次，远程文件简称RFI，该漏洞允许攻击者包含一个远程的文件，一般是远程服务器上的预先设置好的脚本，<br>这种漏洞是由于浏览器对于用户输入没有进行检测，<br>导致不同程度的信息泄露、拒绝服务攻击甚至在目标服务器上执行代码（比如：asp?file=<a href="http://www.hacker.com/webshell/shell.asp)。" target="_blank" rel="noopener">http://www.hacker.com/webshell/shell.asp)。</a><br>2、文件包含漏洞的危害<br>这类漏洞看起来貌似并不严重，一旦被恶意利用则会带来很大的危害。<br>本地文件包含不仅能够包含web文件目录中的一些配置文件（比如Web应用、数据库配置文件、config文件），<br>还可以查看到一些Web动态页面的源代码，为攻击者进一步发掘web应用漏洞提供条件，<br>甚至一旦与路径遍历漏洞相结合，还可能直接攫取目标系统的用户名与密码等文件。</p>
-<pre><code>信安之路还长，任重而道远。   -行走
-</code></pre>
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-      
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-  
-    <article id="post-新建文本文档" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2018/03/18/新建文本文档/" class="article-date">
-  	<time datetime="2018-03-18T03:02:27.699Z" itemprop="datePublished">2018-03-18</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/03/18/新建文本文档/">
-        计算机网络（简书）
-        
-      </a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <blockquote>
-<pre><code>总时延=发送时延+传播时延+处理时延+排队时延
-网络协议（协议）：网络中进行数据交换而建立的规则、标准或约定。
-网络协议包括：一：语法：数据与控制信息的结构或格式。
-         二：语义：需要发出何种控制信息，完成何种动作以及做出何种响应。
-         三：同步：事件实现顺序的详细说明。
-五层协议结构体系：应用层，运输层，网际层，网络结构层（数据链路层，物理层）
-协议（水平）控制对等实体间通信的规则，服务（垂直）由下层向上层通过层接口提供
-三次握手（建立Tcp连接）：
-（1）第一次握手：Client将标志位SYN置为1，随机产生一个值seq=J，并将该数据包发送给Server，Client进入SYN_SENT状态，等待Server确认。
-（2）第二次握手：Server收到数据包后由标志位SYN=1知道Client请求建立连接，Server将标志位SYN和ACK都置为1，ack=J+1，随机产生一个值seq=K，并将该数据包发送给Client以确认连接请求，Server进入SYN_RCVD状态。
-（3）第三次握手：Client收到确认后，检查ack是否为J+1，ACK是否为1，如果正确则将标志位ACK置为1，ack=K+1，并将该数据包发送给Server，Server检查ack是否为K+1，ACK是否为1，如果正确则连接建立成功，Client和Server进入ESTABLISHED状态，完成三次握手，随后Client与Server之间可以开始传输数据了。
- 四次握手（断开Tcp连接）：
-（1）第一次挥手：Client发送一个FIN，用来关闭Client到Server的数据传送，Client进入FIN_WAIT_1状态。
-（2）第二次挥手：Server收到FIN后，发送一个ACK给Client，确认序号为收到序号+1（与SYN相同，一个FIN占用一个序号），Server进入CLOSE_WAIT状态。
-（3）第三次挥手：Server发送一个FIN，用来关闭Server到Client的数据传送，Server进入LAST_ACK状态。
-（4）第四次挥手：Client收到FIN后，Client进入TIME_WAIT状态，接着发送一个ACK给Server，确认序号为收到序号+1，Server进入CLOSED状态，完成四次挥手。 
-</code></pre></blockquote>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-      
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-  
-    <article id="post-first" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2018/03/18/first/" class="article-date">
-  	<time datetime="2018-03-18T02:36:01.692Z" itemprop="datePublished">2018-03-18</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/03/18/first/">
-        Hey Friends
-        
-      </a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <blockquote>
-<pre><code>- 行走
-</code></pre></blockquote>
-<pre><code>&gt;我有一头**小毛驴**，可是我从来都不骑。
-
-
-       以此记我开始。
-</code></pre>
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-      
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2018/03/16/hello-world/" class="article-date">
-  	<time datetime="2018-03-16T13:15:23.216Z" itemprop="datePublished">2018-03-16</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/03/16/hello-world/">
-        Hello World
-        
-      </a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-      
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-  
-  
 </div>
       <footer id="footer">
   <div class="outer">
@@ -606,8 +341,8 @@ CDATA
 		fancybox: true,
 		mathjax: true,
 		animate: true,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
